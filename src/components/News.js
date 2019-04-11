@@ -1,11 +1,29 @@
+// @flow
 import React, { Component } from "react";
 import { SecondaryNews } from "./SecondaryNews";
 
-class News extends Component {
+type JsonPlace = {
+  id: number,
+  title: string,
+  url: string,
+  thumbnailUrl: string
+};
+
+type Props = {
+  /* ... */
+};
+
+type State = {
+  primaryNewsData: JsonPlace,
+  secondaryNewsData: Array<JsonPlace>
+};
+
+class News extends Component<Props, State> {
+  endPoint: string;
   constructor() {
     super();
     this.state = {
-      primaryNewsData: [],
+      primaryNewsData: {},
       secondaryNewsData: []
     };
 
