@@ -31,12 +31,16 @@ class News extends Component {
 
   render() {
     return (
-      <div>
-        <h1>Primary News</h1>
-        <h2>{this.state.primaryNewsData.title} </h2>
-        <img src={this.state.primaryNewsData.url} alt="primary news" />
-        <SecondaryNews newsData={this.state.secondaryNewsData} />
-      </div>
+      <React.Fragment>
+        <div
+          className="primary-image"
+          style={{ backgroundImage: `url(${this.state.primaryNewsData.url})` }}
+        />
+        <div className="container">
+          <h2>{this.state.primaryNewsData.title} </h2>
+          <SecondaryNews newsData={this.state.secondaryNewsData} />
+        </div>
+      </React.Fragment>
     );
   }
 }

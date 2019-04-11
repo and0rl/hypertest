@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 //import logoMenu from "../img/logoMenu.png";
 
 export const Header = () => (
-  <div className="wrapper">
-    <nav className="site-navigation">
-      <NavLink to="/">
+  <header className="header">
+    <nav className="container">
+      <NavLink to="/" className="site-title">
         Logo{/* <img src={logoMenu} className="logo" alt="logo" /> */}
       </NavLink>
 
@@ -19,5 +19,5 @@ export const Header = () => (
         </li>
       </ul>
     </nav>
-  </div>
+  </header>
 );

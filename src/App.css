@@ -1,3 +1,106 @@
-.App-logo {
+/* .App-logo {
   height: 40vmin;
+}
+ */
+body {
+  background: #d7f7fe;
+  font-family: "Nunito", sans-serif;
+  color: #222;
+}
+
+* {
+  transition: all 0.65s ease;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+
+.header {
+  background: #ff6067;
+  color: white;
+  padding: 0.625em;
+}
+.header .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.header .site-title,
+.header .site-tagline {
+  font-weight: 400;
+}
+@media (max-width: 700px) {
+  .header .site-title,
+  .header .site-tagline {
+    width: 100%;
+    text-align: center;
+  }
+  .header .site-title {
+    margin: 0;
+  }
+}
+
+.site-title,
+h1,
+h2,
+h3 {
+  font-family: "Righteous", sans-serif;
+  font-size: 2.625em;
+  color: #024654;
+}
+
+h3 {
+  font-size: 2em;
+  color: #f7686e;
+}
+
+.site-title {
+  color: white;
+  text-decoration: none;
+}
+
+/* .site-tagline {
+  font-size: 1.125em;
+  font-style: italic;
+} */
+
+.menu {
+  margin: 1rem 0 1rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+}
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+.menu a.active {
+  text-decoration: underline;
+}
+.menu-item {
+  list-style: none;
+  margin-left: 35px;
+}
+.menu-item-home {
+  margin-left: 0;
+}
+
+.primary-image {
+  background-size: cover;
+  min-height: 300px;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+@media (max-width: 700px) {
+  .primary-image {
+    min-height: 175px;
+  }
 }
