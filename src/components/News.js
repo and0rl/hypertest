@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SecondaryNews from "./SecondaryNews";
+import { SecondaryNews } from "./SecondaryNews";
 
 class News extends Component {
   constructor() {
@@ -36,9 +36,11 @@ class News extends Component {
           className="primary-image"
           style={{ backgroundImage: `url(${this.state.primaryNewsData.url})` }}
         />
-        <div className="container">
-          <h2>{this.state.primaryNewsData.title} </h2>
-          <SecondaryNews newsData={this.state.secondaryNewsData} />
+        <div className="container-flex">
+          <div className="container">
+            <h2>{this.state.primaryNewsData.title} </h2>
+            <SecondaryNews newsData={this.state.secondaryNewsData} />
+          </div>
         </div>
       </React.Fragment>
     );

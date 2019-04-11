@@ -1,18 +1,12 @@
-import React, { Component } from "react";
+import React from "react";
 
-class SecondaryNews extends Component {
-  render() {
-    return (
-      <div>
-        {this.props.newsData.map(item => (
-          <div key={item.id} className="ddd">
-            <h3>{item.title}</h3>
-            <img src={item.thumbnailUrl} alt={item.id} />
-          </div>
-        ))}
+export const SecondaryNews = props => (
+  <div>
+    {props.newsData.map(item => (
+      <div key={item.id} className="secondary-news">
+        <img src={item.thumbnailUrl} alt={item.id} />
+        <h3>{item.title}</h3>
       </div>
-    );
-  }
-}
-
-export default SecondaryNews;
+    ))}
+  </div>
+);
