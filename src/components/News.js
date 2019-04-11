@@ -10,7 +10,7 @@ class News extends Component {
     };
 
     this.endPoint =
-      "http://jsonplaceholder.typicode.com/photos?_start=0&_limit=5";
+      "https://jsonplaceholder.typicode.com/photos?_start=0&_limit=5";
   }
 
   fetchNews() {
