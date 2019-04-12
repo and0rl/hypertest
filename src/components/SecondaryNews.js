@@ -12,9 +12,9 @@ type Props = {
 };
 
 export const SecondaryNews = (props: Props) => (
-  <div>
+  <div className="secondary-news">
     {props.newsData.map(item => (
-      <div key={item.id} className="secondary-news">
+      <div key={item.id} className="secondary-news-box">
         <img src={item.thumbnailUrl} alt={item.id} />
         <h3>{item.title}</h3>
       </div>

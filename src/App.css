@@ -115,10 +115,14 @@ h3 {
 }
 
 .secondary-news {
+  margin-bottom: 3rem;
+}
+.secondary-news-box {
   display: flex;
   margin: 1.5rem 0 1.5rem 0;
+  align-items: center;
 }
-.secondary-news h3 {
+.secondary-news-box h3 {
   padding-left: 1.3rem;
 }
 
